@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to cocoatalk</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- 먼저 스테이터스 바를 만든다 -->
@@ -19,22 +20,28 @@
         <span>18:43</span>
       </div>
       <div class="status-bar__column">
-        <span>11%</span>
+        <span>50%</span>
         <!-- battery icon -->
-        <i class="fas fa-battery-half"></i>
+        <i class="fas fa-battery-half fa-lg"></i>
         <!-- lightning icon -->
         <i class="fas fa-bolt"></i>
       </div>
     </div>
 
-    <header>
-      <h1>Welcome to CoCoaClone</h1>
-      <p>
+    <header class="welcome-header">
+      <h1 class="welcome-header_title">Welcome to CoCoaClone</h1>
+      <p class="welcome-header_text">
         If you have a cocoa Account, long in with your email or phone number
       </p>
     </header>
 
-    <main></main>
+    <form id="login-form">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log in" />
+      <input type="submit" value="Sign Up" />
+      <a href="#">Find cocoa Account or Password</a>
+    </form>
 
     <!-- font awesome 아이콘을 사용하기 위한 script -->
     <script
