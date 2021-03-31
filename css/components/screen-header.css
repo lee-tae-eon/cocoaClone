@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--horizontal-space);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .screen_header--title {
   font-size: 30px;
@@ -12,3 +12,13 @@
 .screen_header--icons span {
   margin-left: 25px;
 }
+.screen_header--icons span:last-child {
+  position: relative;
+}
+/* .screen_header--icons--cog--noti {
+  position: absolute;
+  left: -2px;
+  bottom: 15px;
+  font-size: 30px;
+  color: #fe6c5a;
+} */

@@ -1,3 +1,4 @@
+/* 숫자 알림 뱃지 */
 .badge {
   background-color: tomato;
   width: 20px;
@@ -8,4 +9,12 @@
   align-items: center;
   color: #ffffff;
   font-weight: 600;
+}
+/* 아이콘 우상단 알림 뱃지 */
+.badge_noti {
+  position: absolute;
+  left: -2px;
+  bottom: 15px;
+  font-size: 30px;
+  color: #fe6c5a;
 }
