@@ -9,6 +9,7 @@
   align-items: center;
   color: #ffffff;
   font-weight: 600;
+  font-size: 13px;
 }
 /* 아이콘 우상단 알림 뱃지 */
 .badge_noti {
