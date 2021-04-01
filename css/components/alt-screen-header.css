@@ -1,0 +1,18 @@
+.alt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  margin-bottom: 5px;
+}
+.alt-header__title {
+  font-size: 28px;
+  font-weight: bold;
+}
+/* 타이틀이 정중앙에 오도록 */
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+.alt-header__column:last-child {
+  margin-left: auto;
+}
