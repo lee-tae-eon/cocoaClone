@@ -1,18 +1,3 @@
-.find-icons {
-  display: flex;
-  justify-content: space-between;
-}
-.find-icons__icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.find-icons__icon i {
-  font-size: 35px;
-}
-.find-icons__icon span {
-  margin-top: 18px;
-}
 .recommended-friends {
   margin: 20px 0px;
   padding: 20px 0px;
@@ -42,17 +27,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: var(--main-border);
+  padding: 10px 0px;
 }
 .open-post__title {
   font-weight: 600;
-  margin-bottom: 7px;
+  /* margin-bottom: 7px; */
 }
 .open-post__hashtag {
   text-transform: uppercase;
   opacity: 0.6;
 }
 .open-post__members {
-  margin-top: 7px;
+  /* margin-top: 7px; */
   display: flex;
   align-items: center;
 }
