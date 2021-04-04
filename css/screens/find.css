@@ -85,3 +85,24 @@
 .open-post__heart__count span {
   margin-left: 3px;
 }
+
+/* 하트 모양 애니메이션 주기 */
+@keyframes heartAnimation {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+/* will change - 브라우저에게 애니메이션 효과가 생길 것이라고 알려주는 행위 */
+.open-post__heart__count:hover i {
+  will-change: transform;
+  animation: heartAnimation 2s linear infinite;
+}

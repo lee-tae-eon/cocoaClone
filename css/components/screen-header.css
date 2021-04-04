@@ -23,3 +23,18 @@
   font-size: 30px;
   color: #fe6c5a;
 } */
+
+/* 헤더 아이콘에 애니메이션 효과 주기 */
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen_header--icons .fa-cog {
+  animation: rotateCog 2s linear infinite;
+}
