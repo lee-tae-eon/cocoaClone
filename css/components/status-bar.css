@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-weight: 600;
   background-color: white;
+  /* 포지션 고정후 z-index를 주고 분리시킨뒤 헤더에 패딩을 줘서 간격 주기*/
   z-index: 99;
   /* background-color: rgba(255, 255, 255, 0.02); */
 }
