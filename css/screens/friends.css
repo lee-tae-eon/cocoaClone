@@ -28,3 +28,35 @@
   color: var(--gray-color);
   font-size: 13px;
 }
+
+/* 새로고침 효과 */
+/* 키프레임을 사용한 애니메이션 효과
+적용은 되나 애니메이션 시간이 끝나면 다시 돌아온다... 이를 해결하기 위해 forward를 사용하면
+마지막 애니메이션 상태로 유지가 되지만 스크린상에 css요소가 그대로 적용 되어있어
+클릭이 되지 않는다 
+visibitiy: hidden을 사용하면 마우스에 클릭 되지 않도록 숨기는 역할을 한다.
+inspect를 보면 여전히 태그는 살아있다.
+아에 없애기 위해서는 js를 이용해야함.*/
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 128px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 2s;
+}
