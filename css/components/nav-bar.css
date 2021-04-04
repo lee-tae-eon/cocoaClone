@@ -15,11 +15,26 @@
   color: #2e363e;
   position: relative;
 }
+/* notification 애니메이션 효과주기 */
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(180deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .nav_notification {
   position: absolute;
   left: 20px;
   bottom: 20px;
+  animation: notificationAnimation 2s ease-in-out infinite;
 }
+
 .nav_ellipsis-noti {
   color: tomato;
   font-weight: bold;
@@ -27,4 +42,29 @@
   position: absolute;
   bottom: 24px;
   left: 30px;
+}
+/* 네비게이션 버튼에 애니메이션 효과주기 */
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nav_btn {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: appearBtnAnimation 0.5s ease-in-out forwards;
+}
+.nav_btn:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.nav_btn:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.nav_btn:last-child {
+  animation-delay: 0.9s;
 }
