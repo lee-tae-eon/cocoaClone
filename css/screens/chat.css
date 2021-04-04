@@ -16,8 +16,9 @@
   z-index: 2;
 }
 #chat-screen .alt-header {
-  top: 10px;
+  /* top: 10px; */
   z-index: 1;
+  padding-top: 40px;
 }
 
 .main-chat {
