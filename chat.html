@@ -44,7 +44,39 @@
     <!-- 메인태그의 안에 요소들은 전부 삭제 클래스만 유지(padding이 전역으로 적용) -->
     <main class="main-screen main-chat">
       <div class="chat__timestamp">Tuesday, June 30, 2020</div>
+
+      <div class="message-row">
+        <img src="images/gyeom1.jpeg" />
+        <div class="message-row__content">
+          <span class="message__author">Gyeom</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">What's up!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="write to a message ...." />
+        <i class="far fa-smile-beam fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
 
     <!-- font awesome 아이콘을 사용하기 위한 script -->
     <script
