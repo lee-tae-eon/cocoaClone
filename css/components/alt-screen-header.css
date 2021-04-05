@@ -5,6 +5,11 @@
   padding: var(--horizontal-space);
   margin-bottom: 5px;
   padding-top: 60px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 19;
 }
 .alt-header__column {
   width: 33%;

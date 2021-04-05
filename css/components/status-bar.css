@@ -26,6 +26,42 @@
   justify-content: flex-end;
   align-items: center;
 }
-.status-bar__column .fa-battery-half {
+/* 배터리에 효과주기 */
+@keyframes needCharge {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    color: tomato;
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.status-bar__column .fa-lg,
+.status-bar__column .fa-bolt {
+  will-change: transform;
   margin: 0px 5px;
+  animation: needCharge 3s ease-in-out infinite;
+}
+
+@keyframes chargeAnimation {
+  0% {
+    transform: rotate(40deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(140px) rotate(90deg);
+    opacity: 0.8;
+  }
+}
+
+.status-bar__column .fa-plug {
+  will-change: transform, rotate;
+  margin-right: 80%;
+  animation: chargeAnimation 1.5s ease-in infinite;
 }

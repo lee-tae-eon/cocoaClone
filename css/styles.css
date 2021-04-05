@@ -12,6 +12,7 @@
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
 @import "components/no-mobile.css";
+@import "components/keyframe.css";
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
@@ -28,4 +29,5 @@ body {
 .main-screen {
   padding: 0px var(--horizontal-space);
   margin-bottom: 60px;
+  padding-top: 120px;
 }

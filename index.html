@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to cocoatalk</title>
+    <title>Gyeom's gram</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -12,33 +12,50 @@
     <div class="status-bar">
       <!-- 와이파이 시계 배터리 등 세개의 컬럼을 만든다 -->
       <div class="status-bar__column">
-        <span>No Service</span>a
+        <span>KOREA 🇰🇷</span>
         <!-- to do : wifi icon -->
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column"><span>18:43</span></div>
       <div class="status-bar__column">
-        <span>50%</span>
+        <i class="fas fa-plug"></i>
+        <span>2%</span>
         <!-- battery icon -->
-        <i class="fas fa-battery-half fa-lg"></i>
+        <i class="fas fa-battery-empty fa-lg"></i>
         <!-- lightning icon -->
         <i class="fas fa-bolt"></i>
       </div>
     </div>
 
-    <header class="welcome-header">
-      <h1 class="welcome-header_title">Welcome to CoCoaClone</h1>
+    <header class="welcome-header main-appear">
+      <h1 class="welcome-header_title">welcome to cocoaclone</h1>
       <p class="welcome-header_text">
         If you have a cocoa Account, long in with your email or phone number
       </p>
     </header>
 
     <form action="friends.html" method="GET" id="login-form">
-      <input name="username" type="text" placeholder="Email or phone number" />
-      <input name="password" type="password" placeholder="Password" />
-      <input type="submit" value="Log in" />
-      <input type="submit" value="Sign Up" />
-      <a href="friends.html">Find cocoa Account or Password</a>
+      <div class="login-form__column">
+        <input
+          name="username"
+          type="text"
+          required
+          placeholder="Email or phone number"
+        />
+        <input
+          name="password"
+          type="password"
+          required
+          placeholder="Password"
+        />
+      </div>
+      <div class="login-form__column">
+        <input type="submit" value="Log in" />
+        <input type="submit" value="Sign Up" />
+      </div>
+      <div class="login-form__column">
+        <a href="friends.html">Find cocoa Account or Password</a>
+      </div>
     </form>
 
     <dib id="no-mobile">
