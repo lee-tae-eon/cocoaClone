@@ -31,3 +31,7 @@ body {
   margin-bottom: 60px;
   padding-top: 120px;
 }
+#login-screen {
+  background-image: url("https://cdn.pixabay.com/photo/2020/06/06/17/18/food-5267422_960_720.jpg");
+  animation: kenburns-top 2s ease-out both;
+}
