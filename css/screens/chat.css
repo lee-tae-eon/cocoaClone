@@ -20,37 +20,6 @@
   z-index: 1;
   padding-top: 40px;
 }
-/* fade-in 애니메이션 */
-@keyframes fadeIn {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
-@keyframes fadeInLeft {
-  from {
-    transform: translateX(-120px);
-    opacity: 0;
-  }
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
-@keyframes fadeInRight {
-  from {
-    transform: translateX(120px);
-    opacity: 0;
-  }
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
 
 .main-chat {
   display: flex;
