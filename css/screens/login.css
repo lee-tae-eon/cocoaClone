@@ -9,8 +9,8 @@
 .welcome-header_title {
   margin-bottom: 32px;
   font-size: 40px;
-  color:#207BBE;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #207bbe;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-shadow: 5px 5px var(--yellow);
 }
 .welcome-header_text {
@@ -32,7 +32,7 @@
   font-size: 16px;
   margin-bottom: 15px;
   animation: swing-in-bottom-fwd 3s ease-out forwards;
-  background-color: rgba(212, 211, 130, 0.6)
+  background-color: rgba(212, 211, 130, 0.6);
 }
 /* 타입이 submit인 요소만 빼고 적용 */
 #login-form input:not([type="submit"]) {
@@ -62,27 +62,31 @@
 .welcome-header h1 {
   animation: focus-in-contract 2.7s ease-out forwards;
 }
-.sns-icons{
+.sns-icons {
   margin-top: 80px;
   display: flex;
   justify-content: center;
 }
 .sns-icons__link i {
-  color: #207BBE;
+  color: #207bbe;
 }
 .sns-icons__link span {
-  color: #207BBE;
+  color: #207bbe;
   font-weight: 600;
   text-shadow: 3px 3px whitesmoke;
 }
-.sns-icons__link{
+.sns-icons__link {
   display: flex;
   flex-direction: column;
   margin: 0px 30px;
   text-align: center;
   animation: snsLinkAnimation 2.5s ease-in-out;
 }
-
-
-
-
+audio {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  opacity: 0.3;
+  width: 40%;
+  height: 30px;
+}

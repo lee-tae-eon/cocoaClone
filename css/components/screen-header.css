@@ -9,7 +9,7 @@
   margin-bottom: 15px;
   padding-top: 60px;
   z-index: 12;
-  background-color: white;
+  background: linear-gradient(#207bbe, #fad700);
 }
 .screen_header--title {
   font-size: 30px;

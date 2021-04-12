@@ -35,3 +35,10 @@ body {
   background-image: url("https://cdn.pixabay.com/photo/2020/06/06/17/18/food-5267422_960_720.jpg");
   animation: kenburns-top 2s ease-out both;
 }
+#friends-screen,
+#chats-screen,
+#find-screen,
+#more-screen {
+  background-image: url("https://cdn.pixabay.com/photo/2020/06/06/17/45/food-5267542_960_720.jpg");
+  background-size: contain;
+}
