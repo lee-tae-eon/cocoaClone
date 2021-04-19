@@ -5,12 +5,15 @@
   justify-content: center;
   padding: 5px 5px;
   box-sizing: border-box;
+  color: black;
   font-weight: 600;
-  background-color: white;
+  background-color: whitesmoke;
+  border-bottom: 1px solid rgba(0, 0, 0);
   /* 포지션 고정후 z-index를 주고 분리시킨뒤 헤더에 패딩을 줘서 간격 주기*/
   z-index: 99;
   /* background-color: rgba(255, 255, 255, 0.02); */
 }
+
 .status-bar__column {
   width: 33%;
 }
@@ -26,6 +29,16 @@
   justify-content: flex-end;
   align-items: center;
 }
-.status-bar__column .fa-battery-half {
+
+.status-bar__column .fa-lg,
+.status-bar__column .fa-bolt {
+  will-change: transform;
   margin: 0px 5px;
+  animation: needCharge 3s ease-in-out infinite;
+}
+
+.status-bar__column .fa-plug {
+  will-change: transform, rotate;
+  margin-right: 80%;
+  animation: chargeAnimation 1.5s ease-in infinite;
 }

@@ -1,0 +1,160 @@
+/* friends page splash animation */
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* fade-in 애니메이션 */
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes appearBtnAnimation {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+/* welcome header animation */
+@keyframes focus-in-contract {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+/* login-form animation*/
+@keyframes swing-in-bottom-fwd {
+  0% {
+    transform: rotateX(100deg);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    transform-origin: bottom;
+    opacity: 1;
+  }
+}
+/* login-page background animation*/
+@keyframes bg-pan-right {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/* sns link transform animation */
+@keyframes snsLinkAnimation {
+  from {
+    transform: translateY(800px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* splash icon rain animation */
+@keyframes coffeRain {
+  0% {
+    transform: translateY(-400px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-200px);
+    transform: scale(0.4);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+/* status-bar 배터리에 효과주기 */
+@keyframes needCharge {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    color: tomato;
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+/* status-bar 충전 애니메이션 */
+@keyframes chargeAnimation {
+  0% {
+    transform: rotate(40deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(140px) rotate(90deg);
+    opacity: 0.8;
+  }
+}
+
+/* settings list animation */
+@keyframes scale-in-hor-left {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}

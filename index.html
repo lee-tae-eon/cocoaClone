@@ -4,47 +4,95 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to cocoatalk</title>
+    <title>COCOATALK</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body id="login-screen">
+    <audio controls src="media/24kGoldn - Mood.mp3"></audio>
     <!-- 먼저 스테이터스 바를 만든다 -->
     <div class="status-bar">
       <!-- 와이파이 시계 배터리 등 세개의 컬럼을 만든다 -->
       <div class="status-bar__column">
-        <span>No Service</span>a
+        <span>KOREA 🇰🇷</span>
         <!-- to do : wifi icon -->
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column"><span>18:43</span></div>
       <div class="status-bar__column">
-        <span>50%</span>
+        <i class="fas fa-plug"></i>
+        <span>2%</span>
         <!-- battery icon -->
-        <i class="fas fa-battery-half fa-lg"></i>
+        <i class="fas fa-battery-empty fa-lg"></i>
         <!-- lightning icon -->
         <i class="fas fa-bolt"></i>
       </div>
     </div>
 
     <header class="welcome-header">
-      <h1 class="welcome-header_title">Welcome to CoCoaClone</h1>
+      <h1 class="welcome-header_title">Welcome to CoCoATalk</h1>
       <p class="welcome-header_text">
         If you have a cocoa Account, long in with your email or phone number
       </p>
     </header>
 
     <form action="friends.html" method="GET" id="login-form">
-      <input name="username" type="text" placeholder="Email or phone number" />
-      <input name="password" type="password" placeholder="Password" />
-      <input type="submit" value="Log in" />
-      <input type="submit" value="Sign Up" />
-      <a href="friends.html">Find cocoa Account or Password</a>
+      <div class="login-form__column">
+        <input
+          name="username"
+          type="text"
+          required
+          placeholder="Email or phone number"
+        />
+        <input
+          name="password"
+          type="password"
+          required
+          minlength="6"
+          placeholder="Password"
+        />
+      </div>
+      <div class="login-form__column">
+        <input type="submit" value="Log in" />
+        <input type="submit" value="Sign Up" />
+      </div>
+      <div class="login-form__column">
+        <a href="friends.html">Find cocoa Account or Password</a>
+      </div>
     </form>
 
     <dib id="no-mobile">
       <span>Your screen is too big!!</span>
     </dib>
     <!-- font awesome 아이콘을 사용하기 위한 script -->
+
+    <div class="sns-icons">
+      <a class="sns-icons__link" href="http://instagram.com" target="_blank">
+        <i class="fab fa-instagram fa-4x"></i>
+        <span>Instagram</span>
+      </a>
+      <a class="sns-icons__link" href="http://twitter.com" target="_blank">
+        <i class="fab fa-twitter-square fa-4x"></i>
+        <span>Twitter</span>
+      </a>
+      <a class="sns-icons__link" href="http://github.com" target="_blank">
+        <i class="fab fa-github-square fa-4x"></i>
+        <span>Github</span>
+      </a>
+      <a class="sns-icons__link" href="http://facebook.com" target="_blank">
+        <i class="fab fa-facebook-square fa-4x"></i>
+        <span>Facebook</span>
+      </a>
+    </div>
+    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script>
+      const sf = new Snowflakes({
+        color: "#422611", // 색상
+        count: 50, // 갯수
+        minOpacity: 0.2, // 최소 투명도 0: 투명 | 1: 불투명
+        maxOpacity: 0.5, // 최대 투명도
+      });
+    </script>
+
     <script
       src="https://kit.fontawesome.com/336cf39492.js"
       crossorigin="anonymous"

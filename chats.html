@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - Cocoa Clone</title>
+    <title>Chats - Cocoa Talk</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body id="chats-screen">
     <!-- 먼저 스테이터스 바를 만든다 -->
     <div class="status-bar">
       <!-- 와이파이 시계 배터리 등 세개의 컬럼을 만든다 -->
       <div class="status-bar__column">
-        <span>No Service</span>
+        <span>KOREA 🇰🇷</span>
         <!-- to do : wifi icon -->
         <i class="fas fa-wifi"></i>
       </div>
@@ -20,20 +20,23 @@
         <span>18:43</span>
       </div>
       <div class="status-bar__column">
-        <span>50%</span>
+        <i class="fas fa-plug"></i>
+        <span>2%</span>
         <!-- battery icon -->
-        <i class="fas fa-battery-half fa-lg"></i>
+        <i class="fas fa-battery-empty fa-lg"></i>
         <!-- lightning icon -->
         <i class="fas fa-bolt"></i>
       </div>
     </div>
 
-    <header class="screen_header">
+    <header class="screen_header chats_header">
       <h1 class="screen_header--title">Chats</h1>
       <div class="screen_header--icons">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="far fa-comment-dots fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
+        <!-- <span><i class="far fa-comment-dots fa-lg"></i></span> -->
+        <span
+          ><a href="friends.html"><i class="fas fa-users fa-lg"></i></a
+        ></span>
         <span>
           <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
         </span>
@@ -44,7 +47,7 @@
       <a href="chat.html">
         <div class="user-component">
           <div class="user-component__column">
-            <img src="images/gyeom1.jpeg" class="user-component__avatar" />
+            <img src="images/myson.jpeg" class="user-component__avatar" />
             <div class="user-component__text">
               <h3 class="user-component__name">Gyeom</h3>
               <h6 class="user-component__subtitle">
@@ -55,6 +58,21 @@
           <div class="user-component__column">
             <span class="user-component__time">23:14</span>
             <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
+      <a href="chat.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img src="images/mywife.JPG" class="user-component__avatar" />
+            <div class="user-component__text">
+              <h3 class="user-component__name">Angry Wife</h3>
+              <h6 class="user-component__subtitle"></h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">22:34</span>
+            <div class="badge">2</div>
           </div>
         </div>
       </a>
@@ -69,8 +87,14 @@
         </li>
         <li class="nav_btn">
           <a class="nav_link" href="chats.html">
-            <span class="nav_notification badge">1</span>
+            <span class="nav_notification badge">2</span>
             <i class="fas fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav_btn">
+          <a class="nav_link" href="musicbox.html">
+            <span class="nav_notification badge">1</span>
+            <i class="fas fa-music fa-2x"></i>
           </a>
         </li>
         <li class="nav_btn">
@@ -96,5 +120,14 @@
       src="https://kit.fontawesome.com/336cf39492.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script>
+      const sf = new Snowflakes({
+        color: "#422611", // 색상
+        count: 50, // 갯수
+        minOpacity: 0.2, // 최소 투명도 0: 투명 | 1: 불투명
+        maxOpacity: 0.5, // 최대 투명도
+      });
+    </script>
   </body>
 </html>

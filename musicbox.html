@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music - Cocoa Talk</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body id=music-screen">
+    <audio autoplay src="media/24kGoldn - Mood.mp3"></audio>
+    <!-- 먼저 스테이터스 바를 만든다 -->
+    <div class="status-bar">
+      <!-- 와이파이 시계 배터리 등 세개의 컬럼을 만든다 -->
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <!-- to do : wifi icon -->
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-plug"></i>
+        <span>2%</span>
+        <!-- battery icon -->
+        <i class="fas fa-battery-empty fa-lg"></i>
+        <!-- lightning icon -->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="music-header">
+      <div class="music-header__icons">
+        <a href="friends.html"><i class="fas fa-angle-left fa-2x"></i></a>
+        <a href="#"><i class="fas fa-search fa-lg"></i></a>
+      </div>
+      <div class="music-header__title">
+        <img
+          class="small_avartar"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNXPqMrb_41rTfMs6K6OSe4erERp8rGykucg&usqp=CAU"
+          alt="No Image"
+        />
+        <h1>24K Goldn</h1>
+        <h4>Rap, Hip-Hop</h4>
+        <div class="play-buttons">
+          <button class="play-button" value="Suffle">
+            <span>Shuffle</span>
+          </button>
+          <button class="play-button">
+            <i class="fas fa-heart"></i>
+            <span>332 5571</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="music-player">
+      <h5 class="play-list__author">24k goldn</h5>
+      <h6 class="play-list__title">mood</h6>
+      <div class="music-player__icons">
+        <i class="fas fa-step-backward fa-sm"></i>
+        <i class="fas fa-pause fa-lg"></i>
+        <i class="fas fa-step-forward fa-sm"></i>
+      </div>
+    </div>
+    <ul class="play-lists">
+      <li class="play-list">
+        <div class="play-list__column">
+          <div class="play-list__img">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNXPqMrb_41rTfMs6K6OSe4erERp8rGykucg&usqp=CAU"
+            />
+            <div class="playing-bars">
+              <div class="playing-bar"></div>
+              <div class="playing-bar"></div>
+              <div class="playing-bar"></div>
+            </div>
+          </div>
+          <div class="play-list__text">
+            <h5 class="play-list__author">24K Goldn</h5>
+            <h6 class="play-list__title">mood</h6>
+          </div>
+        </div>
+        <div class="play-list__column">
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </li>
+      <li class="play-list">
+        <div class="play-list__column">
+          <div class="play-list__img">
+            <img
+              src="https://images.genius.com/9e0b06b58a2cd5ed6d7710a05558a66c.1000x1000x1.jpg"
+            />
+          </div>
+          <div class="play-list__text">
+            <h5 class="play-list__author">Maroon5</h5>
+            <h6 class="play-list__title">Beautiful Mistakes</h6>
+          </div>
+        </div>
+        <div class="play-list__column">
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </li>
+      <li class="play-list">
+        <div class="play-list__column">
+          <div class="play-list__img">
+            <img
+              src="https://blog.kakaocdn.net/dn/z2oEr/btq1augn0up/J7kspVlM2vibQ0xTTohYP1/img.png"
+            />
+          </div>
+          <div class="play-list__text">
+            <h5 class="play-list__author">Justin bieber</h5>
+            <h6 class="play-list__title">Peaches</h6>
+          </div>
+        </div>
+        <div class="play-list__column">
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </li>
+      <li class="play-list">
+        <div class="play-list__column">
+          <div class="play-list__img">
+            <img
+              src="https://mblogthumb-phinf.pstatic.net/MjAyMDA0MjZfMjU2/MDAxNTg3ODkwOTYzNTk0.m572Bs86Shq6bspzBDvYYyvEpkSY_FuJaV4Cwev3XEcg.mtIGln8f87iz34rzlqNa_Z2Imw05NaomKGPptFw5-XQg.JPEG.silvermin102/39d.jpg?type=w800"
+            />
+          </div>
+          <div class="play-list__text">
+            <h5 class="play-list__author">Tyler, the Creator</h5>
+            <h6 class="play-list__title">WOLF</h6>
+          </div>
+        </div>
+        <div class="play-list__column">
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+
+   
+
+    <dib id="no-mobile">
+      <span>Your screen is too big!!</span>
+    </dib>
+
+    <!-- font awesome 아이콘을 사용하기 위한 script -->
+    <script
+      src="https://kit.fontawesome.com/336cf39492.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script>
+      const sf = new Snowflakes({
+        color: "#422611", // 색상
+        count: 75, // 갯수
+        minOpacity: 0.3, // 최소 투명도 0: 투명 | 1: 불투명
+        maxOpacity: 0.7, // 최대 투명도
+      });
+    </script>
+  </body>
+</html>

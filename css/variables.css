@@ -3,4 +3,5 @@
   --horizontal-space: 27px; /* 레이아웃의 좌우 패딩값 */
   --main-border: 1px solid rgba(0, 0, 0, 0.2); /* 자주 쓰는 보더라인 */
   --gray-color: rgba(0, 0, 0, 0.4); /* 회색 글자 색 */
+  --main-background-color: #d8d7d7;
 }

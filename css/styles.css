@@ -12,6 +12,7 @@
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
 @import "components/no-mobile.css";
+@import "components/keyframe.css";
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
@@ -19,13 +20,18 @@
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chat.css";
-
+@import "screens/musicbox.css";
 body {
   font-family: "Open Sans", sans-serif;
-  color: #2e363e;
+  color: #5d5f61;
   height: 100%;
+  background-color: var(--main-background-color);
 }
 .main-screen {
   padding: 0px var(--horizontal-space);
   margin-bottom: 60px;
+  padding-top: 120px;
+}
+#login-screen {
+  animation: bg-pan-right 8s both;
 }
