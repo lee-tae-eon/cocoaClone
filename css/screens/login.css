@@ -63,7 +63,7 @@
   animation: focus-in-contract 2.7s ease-out forwards;
 }
 .sns-icons {
-  margin-top: 80px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
@@ -78,7 +78,7 @@
 .sns-icons__link {
   display: flex;
   flex-direction: column;
-  margin: 0px 30px;
+  margin: 0px 10px;
   text-align: center;
   animation: snsLinkAnimation 2.5s ease-in-out;
 }

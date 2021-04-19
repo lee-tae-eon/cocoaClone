@@ -32,6 +32,3 @@ body {
   margin-bottom: 60px;
   padding-top: 120px;
 }
-#login-screen {
-  animation: bg-pan-right 8s both;
-}
