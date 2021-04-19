@@ -1,4 +1,4 @@
-.recommended-friends {
+.recommended-books {
   margin: 20px 0px;
   padding: 20px 0px;
   color: var(--gray-color);
@@ -6,11 +6,25 @@
   border-bottom: var(--main-border);
   font-size: 14px;
 }
-.recommended-friends span {
-  margin: 110px 0px;
-  display: block;
-  font-size: 18px;
+.recommended-books__lists {
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+}
+.recommended-icon__thumb {
+  font-size: 8px;
+  margin-top: 10px;
   text-align: center;
+}
+.recommended-books_list {
+  margin: 30px 20px 30px 0;
+}
+.recommended-books_list img {
+  border-radius: 20px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+  width: 102px;
+  height: 144px;
+  filter: grayscale(80%);
 }
 .open-chat__header {
   display: flex;
@@ -69,6 +83,7 @@
   width: 120px;
   height: 120px;
   border-radius: 15px;
+  filter: grayscale(80%);
 }
 .open-post__heart__count {
   border-radius: 20px;

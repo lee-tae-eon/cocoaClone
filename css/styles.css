@@ -20,11 +20,12 @@
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chat.css";
-
+@import "screens/musicbox.css";
 body {
   font-family: "Open Sans", sans-serif;
-  color: #2e363e;
+  color: #5d5f61;
   height: 100%;
+  background-color: var(--main-background-color);
 }
 .main-screen {
   padding: 0px var(--horizontal-space);
@@ -32,13 +33,5 @@ body {
   padding-top: 120px;
 }
 #login-screen {
-  background-image: url("https://cdn.pixabay.com/photo/2020/06/06/17/18/food-5267422_960_720.jpg");
-  animation: kenburns-top 2s ease-out both;
-}
-#friends-screen,
-#chats-screen,
-#find-screen,
-#more-screen {
-  background-image: url("https://cdn.pixabay.com/photo/2020/06/06/17/45/food-5267542_960_720.jpg");
-  background-size: contain;
+  animation: bg-pan-right 8s both;
 }

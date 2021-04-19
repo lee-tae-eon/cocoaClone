@@ -5,13 +5,15 @@
   justify-content: center;
   padding: 5px 5px;
   box-sizing: border-box;
-  color: white;
+  color: black;
   font-weight: 600;
-  background-color: #207BBE;
+  background-color: whitesmoke;
+  border-bottom: 1px solid rgba(0, 0, 0);
   /* 포지션 고정후 z-index를 주고 분리시킨뒤 헤더에 패딩을 줘서 간격 주기*/
   z-index: 99;
   /* background-color: rgba(255, 255, 255, 0.02); */
 }
+
 .status-bar__column {
   width: 33%;
 }
@@ -27,38 +29,12 @@
   justify-content: flex-end;
   align-items: center;
 }
-/* 배터리에 효과주기 */
-@keyframes needCharge {
-  0% {
-    opacity: 0.3;
-  }
-  50% {
-    color: tomato;
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  100% {
-    opacity: 0.8;
-  }
-}
 
 .status-bar__column .fa-lg,
 .status-bar__column .fa-bolt {
   will-change: transform;
   margin: 0px 5px;
   animation: needCharge 3s ease-in-out infinite;
-}
-
-@keyframes chargeAnimation {
-  0% {
-    transform: rotate(40deg);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(140px) rotate(90deg);
-    opacity: 0.8;
-  }
 }
 
 .status-bar__column .fa-plug {

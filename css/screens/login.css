@@ -9,9 +9,9 @@
 .welcome-header_title {
   margin-bottom: 32px;
   font-size: 40px;
-  color: #207bbe;
+  color: #646668;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  text-shadow: 5px 5px var(--yellow);
+  text-shadow: 5px 5px #a4acb4;
 }
 .welcome-header_text {
   width: 60%;
@@ -32,7 +32,7 @@
   font-size: 16px;
   margin-bottom: 15px;
   animation: swing-in-bottom-fwd 3s ease-out forwards;
-  background-color: rgba(212, 211, 130, 0.6);
+  background-color: rgba(161, 161, 158, 0.6);
 }
 /* 타입이 submit인 요소만 빼고 적용 */
 #login-form input:not([type="submit"]) {
@@ -45,7 +45,7 @@
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--yellow);
+  background-color: #5c6a77;
   cursor: pointer;
   padding: 13px 0px;
   border-radius: 5px;
@@ -68,10 +68,10 @@
   justify-content: center;
 }
 .sns-icons__link i {
-  color: #207bbe;
+  color: #5c6a77;
 }
 .sns-icons__link span {
-  color: #207bbe;
+  color: #5c6a77;
   font-weight: 600;
   text-shadow: 3px 3px whitesmoke;
 }
@@ -84,9 +84,9 @@
 }
 audio {
   position: absolute;
-  top: 40px;
+  top: 70px;
   left: 30px;
   opacity: 0.3;
-  width: 40%;
+  width: 60%;
   height: 30px;
 }

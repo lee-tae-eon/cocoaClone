@@ -1,0 +1,243 @@
+.music-header {
+  padding: 50px 50px 10px 50px;
+}
+.music-header__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.music-header__title {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.small_avartar {
+  border-radius: 40px;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 50px;
+  box-shadow: 0px 10px 20px -3px #f89d77;
+  filter: grayscale(80%);
+}
+.music-header__title h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.music-header__title h4 {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.play-buttons {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.play-button {
+  width: 45%;
+  height: 45px;
+  border-radius: 25px;
+  background-color: #8e9092;
+  color: wheat;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 4px 4px 0px #646668;
+}
+.play-button:nth-child(2) {
+  background-color: white;
+  color: black;
+}
+.play-button:nth-child(2) span {
+  opacity: 0.3;
+  margin-left: 5px;
+}
+
+.play-lists {
+  margin-top: 45px;
+}
+.play-list {
+  border-radius: 10px;
+  margin: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  margin-bottom: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.play-list:hover {
+  box-shadow: 2px 10px 10px 0 rgba(20, 20, 20, 0.2);
+}
+.play-list__column {
+  display: flex;
+}
+.play-list__img img {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  margin-right: 20px;
+  filter: grayscale(80%);
+}
+.play-list__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3px 0px;
+}
+.play-list__author {
+  font-size: 12px;
+  opacity: 0.3;
+}
+.play-list__title {
+  font-size: 14px;
+}
+.play-list__column:nth-child(2) i {
+  opacity: 0.5;
+}
+.play-list__img {
+  /* display: flex; */
+  position: relative;
+}
+.playing-bars {
+  position: absolute;
+  top: 16px;
+  left: 9px;
+  display: flex;
+  justify-content: center;
+}
+.playing-bar {
+  width: 5px;
+  height: 14px;
+  background-color: white;
+  margin-right: 4px;
+  border-radius: 4px;
+  animation: musicPlaying 1s ease-in-out infinite;
+}
+@keyframes musicPlaying {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  50%,
+  75% {
+    transform: none;
+  }
+  100% {
+    transform: none;
+  }
+}
+.playing-bar:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.playing-bar:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.music-player {
+  margin: 0 5px;
+  background-color: #646668;
+  color: white;
+  border-radius: 30px;
+  padding: 15px 25px;
+  position: relative;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+}
+.music-player h5 {
+  margin-bottom: 10px;
+}
+.music-player__icons {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+}
+.music-player__icons i:nth-child(2) {
+  margin: 0 30px;
+}
+
+/* second page */
+.music-title .big-avartar {
+  margin-top: 70px;
+  width: 265px;
+  height: 265px;
+  border-radius: 30px;
+  margin-bottom: 70px;
+  box-shadow: 0px 15px 20px 4px rgba(231, 71, 58, 0.4);
+}
+.play-range-bar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 35px;
+}
+.play-range {
+  width: 90%;
+}
+
+.play-range .start-end {
+  opacity: 0.3;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.play-control-bar {
+  text-align: center;
+}
+
+.play-button-icons {
+  margin: 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.play-button-button {
+  background-color: white;
+  border: none;
+  font-size: 20px;
+}
+.play-button-button .fa-retweet,
+.play-button-button .fa-random {
+  opacity: 0.3;
+}
+.play-button-button:nth-child(3) {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  background-color: black;
+  color: white;
+  box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="range"] {
+  width: 100%;
+  appearance: none;
+  height: 6px;
+  background: transparent;
+  background: #e5e4e3;
+  border-radius: 3px;
+  /* overflow: hidden; */
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  background: thistle;
+  border: 0.1px solid thistle;
+  /* box-shadow: -100vw 0 0 100vw thistle; */
+  height: 15px;
+  width: 15px;
+  margin-top: -2px;
+  border-radius: 50%;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>COCOATALK-Friends</title>
+    <title>Friends - Cocoa Talk</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body id="friends-screen">
@@ -33,7 +33,9 @@
       <h1 class="screen_header--title">Friends</h1>
       <div class="screen_header--icons">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
+        <span
+          ><a href="musicbox.html"><i class="fas fa-music fa-lg"></i></a
+        ></span>
         <span
           ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
         ></span>
@@ -54,7 +56,7 @@
             class="user-component__avatar user-component__avatar--xl"
           />
           <div class="user-component__text">
-            <h3 class="user-component__name">Gyeom</h3>
+            <h3 class="user-component__name">LEE</h3>
 
             <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
           </div>
@@ -69,7 +71,7 @@
         <div class="user-component">
           <div class="user-component__column">
             <img
-              src="images/gyeom1.jpeg"
+              src="images/channel.png"
               class="user-component__avatar user-component__avatar--sm"
             />
             <div class="user-component__text">
@@ -92,60 +94,32 @@
           <span>Friends</span>
           <i class="fas fa-chevron-up fa-xs"></i>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="images/gyeom1.jpeg"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h3 class="user-component__name user-component__name-not-bold">
-                Gyeom
-              </h3>
-              <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+        <a href="wifechat.html">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="images/mywife.jpg"
+                class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+                <h3 class="user-component__name user-component__name-not-bold">
+                  Angry Wife
+                </h3>
+                <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+              </div>
             </div>
+            <div class="user-component__column"></div>
           </div>
-          <div class="user-component__column"></div>
-        </div>
+        </a>
         <div class="user-component">
           <div class="user-component__column">
             <img
-              src="images/gyeom1.jpeg"
+              src="images/myson.jpeg"
               class="user-component__avatar user-component__avatar--sm"
             />
             <div class="user-component__text">
               <h3 class="user-component__name user-component__name-not-bold">
-                Gyeom
-              </h3>
-              <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
-            </div>
-          </div>
-          <div class="user-component__column"></div>
-        </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="images/gyeom1.jpeg"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h3 class="user-component__name user-component__name-not-bold">
-                Gyeom
-              </h3>
-              <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
-            </div>
-          </div>
-          <div class="user-component__column"></div>
-        </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="images/gyeom1.jpeg"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h3 class="user-component__name user-component__name-not-bold">
-                Gyeom
+                lovelyGyeom
               </h3>
               <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
             </div>
@@ -159,13 +133,19 @@
       <ul class="nav_list">
         <li class="nav_btn">
           <a class="nav_link" href="friends.html">
-            <i class="fas fa-user fa-2x"></i>
+            <i class="far fa-user fa-2x"></i>
           </a>
         </li>
         <li class="nav_btn">
           <a class="nav_link" href="chats.html">
+            <span class="nav_notification badge">2</span>
+            <i class="fas fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav_btn">
+          <a class="nav_link" href="musicbox.html">
             <span class="nav_notification badge">1</span>
-            <i class="far fa-comment fa-2x"></i>
+            <i class="fas fa-music fa-2x"></i>
           </a>
         </li>
         <li class="nav_btn">
@@ -210,9 +190,9 @@
     <script>
       const sf = new Snowflakes({
         color: "#422611", // 색상
-        count: 75, // 갯수
-        minOpacity: 0.3, // 최소 투명도 0: 투명 | 1: 불투명
-        maxOpacity: 0.7, // 최대 투명도
+        count: 50, // 갯수
+        minOpacity: 0.2, // 최소 투명도 0: 투명 | 1: 불투명
+        maxOpacity: 0.5, // 최대 투명도
       });
     </script>
   </body>
