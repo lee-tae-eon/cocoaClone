@@ -9,6 +9,7 @@
   width: 100%;
   box-sizing: border-box;
   z-index: 19;
+  background-color: var(--main-background-color);
 }
 .alt-header__column {
   width: 33%;
